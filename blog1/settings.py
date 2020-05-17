@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog'
+    'captcha'
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+RECAPTCHA_PUBLIC_KEY = '6Lf3vvYUAAAAAB3y1UBmvlXLQQ8AsHWwnN0bi2Ib'
+RECAPTCHA_PRIVATE_KEY = '6Lf3vvYUAAAAACRo2KYltSYRxbsdOA0vnKbnSsWY'
+NOCAPTCHA=True
